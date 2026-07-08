@@ -1,0 +1,34 @@
+[project]
+name = "DiplomaturaCDIN-TP2"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Uriel Gomez", email = "urigomez2002@gmail.com" }
+]
+dependencies = [
+    "flet>=0.85.3",
+    "pandas>=2.3.3",
+    "pgadmin4>=9.16",
+    "pypdf>=6.14.2",
+    "python-dotenv>=1.2.2",
+    "reportlab>=5.0.0",
+    "sqlalchemy>=2.0.51",
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.85.3",
+    "flet-desktop>=0.85.3",
+    "flet-web>=0.85.3",
+]
+
+[tool.flet]
+org = "com.mycompany"
+product = "DiplomaturaCDIN-TP2"
+company = "Uriel Gomez"
+copyright = "Copyright (C) 2026 by Uriel Gomez"
+
+[tool.flet.app]
+path = "src"
