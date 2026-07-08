@@ -1,5 +1,5 @@
-# ImpresoraDePlata app
-
+# app Diplomatura-CDIN-TP2
+Aplicación de escritorio con conexión a base de datos externa para la Diplomatura en Ciencias de Datos e Inteligencia de Negocios.
 ## Run the app
 
 ### uv
