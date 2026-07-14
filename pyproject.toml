@@ -11,6 +11,7 @@ dependencies = [
     "flet>=0.85.3",
     "pandas>=2.3.3",
     "pgadmin4>=9.16",
+    "psycopg2>=2.9.12",
     "pypdf>=6.14.2",
     "python-dotenv>=1.2.2",
     "reportlab>=5.0.0",
@@ -23,6 +24,9 @@ dev = [
     "flet-desktop>=0.85.3",
     "flet-web>=0.85.3",
 ]
+
+[tool.uv]
+package = true
 
 [tool.flet]
 org = "com.mycompany"

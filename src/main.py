@@ -1,16 +1,20 @@
-import flet as ft
 import os
 import pandas as pd
 from sqlalchemy import create_engine
-from rl.rlController import ReportLab
+from app import Database as db
+from database.db import DB
+from pdf.rlController import ReportLab
+from ui.ui import run_ui
 
 
 def main():
+    engine = DB.conn()
+    #DB.run_query(engine, "SELECT * FROM clientes;")
     print("Hello from diplomaturaCDIN-TP2!")
     rl = ReportLab()
+    #rl.hello_world_example()
 
-    rl.hello_world_example()
-
+    run_ui()
 
 if __name__ == "__main__":
     main()

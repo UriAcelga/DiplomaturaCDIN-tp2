@@ -161,3 +161,9 @@ cython_debug/
 
 # Flet
 storage/
+
+# Ignorar todo el contenido del directorio private
+private/*
+
+# Evitar ignorar el archivo .gitkeep para preservar la carpeta en el repositorio
+!private/.gitkeep
