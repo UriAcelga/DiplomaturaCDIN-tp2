@@ -54,7 +54,7 @@ class DB:
                     'nombre': fila['Nombre'],
                     'domicilio': fila['Domicilio'],
                     'nacionalidad': fila['Nacionalidad'],
-                    'cuil': fila['CUIL']
+                    'cuil': fila['cuil']
                 }).scalar()
                 ids.append(id)
         return ids
@@ -74,7 +74,7 @@ class DB:
             for i, fila in dataframe.iterrows():
                 conn.execute(cls.insert_clientes, {
                     'persona_id': ids[i],
-                    'estado': fila['Estado']
+                    'estado': fila['estado']
                 })
 
     @classmethod
@@ -92,8 +92,8 @@ class DB:
             for i, fila in dataframe.iterrows():
                 conn.execute(cls.insert_vendedores, {
                     'persona_id': ids[i],
-                    'desde': fila['Desde'],
-                    'estado': fila['Estado']
+                    'desde': fila['desde'],
+                    'estado': fila['estado']
                 })
 
     @classmethod

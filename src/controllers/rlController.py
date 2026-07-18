@@ -1,7 +1,7 @@
 from app import Rutas as r
 from reportlab.pdfgen import canvas
 
-class ReportLab:  
+class RlController:  
     def __init__(self, file="rl-hello_world.pdf"):
         self.file = r.ruta_reportes(file)
         self.canvas = None
